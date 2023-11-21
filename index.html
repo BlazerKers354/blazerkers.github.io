@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biodata Adolf Hitler</title>
+    <style>
+        .nav-container {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #000000;
+        }
+
+        .nav-container header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            height: 60px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .nav-container .logo img {
+            width: 120px;
+        }
+        
+        /* Tablet breakpoint */
+        @media screen and (max-width: 768px) {
+            body {
+                background-color: #ff0000;
+            }
+        
+            h1 {
+                font-size: 24px; 
+            }
+        
+        }
+        
+        /* Phone breakpoint */
+        @media screen and (max-width: 480px) {
+            body {
+                background-color: #ff0000;
+            }
+        
+            h1 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        
+            p {
+                font-size: 16px;
+            }
+        
+            .gallery img {
+                width: 150px;
+                height: 150px;
+                margin: 5px;
+            }
+        
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff0000, #000000, rgb(255, 255, 255));
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ff0000;
+            padding: 20px;
+
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #ff0000;
+            font-size: 24px;
+            border-bottom: 1px solid #ff0000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        #deskripsi {
+            text-align: justify;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery figure {
+            text-align: center;
+        }
+
+        .gallery figcaption {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        video {
+            width: 100%;
+            max-height: 400px;
+        }
+
+        h3 {
+            padding: 20px;
+            background-color: #000000;
+            color: rgb(255, 0, 0)
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: red;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ff0000;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Biodata Adolf Hitler</h1>
+        <div class="nav-container">
+            <header>
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/War_Ensign_of_Germany_%281938%E2%80%931945%29.svg/800px-War_Ensign_of_Germany_%281938%E2%80%931945%29.svg.png"
+                        alt="Logo">
+                </div>
+            </header>
+        </div>
+    </header>
+    <div id="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hitler_portrait_crop.jpg/330px-Hitler_portrait_crop.jpg"
+            alt="Foto Adolf Hitler">
+        <h2>Nama Lengkap</h2>
+        <p>Adolf Hitler</p>
+
+        <h2>Tempat dan Tanggal Lahir</h2>
+        <p>Braunau am Inn, Austria-Hungaria<br>20 April 1889</p>
+
+        <h2>Meninggal</h2>
+        <p>30 April 1945 (umur 56)<br>Berlin, Jerman Nazi</p>
+
+        <h2>Orang Tua</h2>
+        <p>Alois Hitler (Ayah)<br>Klara Hitler (Ibu)</p>
+
+        <h2>Pekerjaan</h2>
+        <p>Politikus, tentara, seniman, penulis</p>
+
+        <h2>Deskripsi</h2>
+        <p id="deskripsi">Adolf Hitler (bahasa Jerman: [ˈadɔlf ˈhɪtlɐ]; 20 April 1889 – 30 April 1945) adalah seorang
+            politisi Jerman dan ketua Partai Nazi (bahasa Jerman: Nationalsozialistische Deutsche Arbeiterpartei
+            (NSDAP);
+            Partai Pekerja Jerman Sosialis Nasional) kelahiran Austria. Ia menjabat sebagai Kanselir Jerman sejak 1933
+            sampai 1945 dan diktator Jerman Nazi (bergelar Führer und Reichskanzler) mulai tahun 1934 sampai 1945.
+            Hitler
+            menjadi tokoh utama Jerman Nazi, Perang Dunia II di Eropa, dan Holocaust.<br><br> Hitler adalah veteran
+            Perang Dunia I dengan banyak gelar. Ia bergabung dengan Partai Pekerja Jerman (pendahulu NSDAP) pada tahun
+            1919, dan menjadi ketua NSDAP tahun 1921. Tahun 1923, ia melancarkan kudeta di Munich yang dikenal dengan
+            peristiwa Beer Hall Putsch. Kudeta yang gagal tersebut berujung dengan ditahannya Hitler. Di penjara, Hitler
+            menulis memoarnya, Mein Kampf (Perjuanganku). Setelah bebas tahun 1924, Hitler mendapat dukungan rakyat
+            dengan mengecam Perjanjian Versailles dan menjunjung Pan-Jermanisme, antisemitisme, dan anti-komunisme
+            melalui pidatonya yang karismatik dan propaganda Nazi. Setelah ditunjuk sebagai kanselir pada tahun 1933, ia
+            mengubah Republik Weimar menjadi Reich Ketiga, sebuah kediktatoran satu partai yang didasarkan pada ideologi
+            Nazisme yang totalitarian and autokrasi.<br><br> Tujuan Hitler adalah mendirikan Orde Baru hegemoni Jerman
+            Nazi
+            yang absolut di daratan Eropa. Sampai saat itu, kebijakan luar dan dalam negerinya bertujuan mencapai
+            Lebensraum ("ruang hidup") bagi kaum Jermanik. Ia memerintahkan Jerman dipersenjatai kembali and Wehrmacht
+            menginvasi Polandia pada bulan September 1939, menyebabkan pecahnya Perang Dunia II di Eropa. Di bawah
+            pemerintahan Hitler, pada tahun 1941 pasukan Jerman and sekutu Eropanya menduduki sebagian besar Eropa and
+            Afrika Utara. Tahun 1943, Jerman harus mempertahankan wilayahnya and mengalami serangkaian kekalahan dalam
+            pertempuran. Pada hari-hari terakhir perang, saat Pertempuran Berlin berlangsung tahun 1945, Hitler menikahi
+            kekasih lamanya, Eva Braun. Tanggal 30 April 1945, kurang dari dua hari kemudian, keduanya bunuh diri agar
+            tidak ditangkap Angkatan Darat Merah, lalu mayat mereka dibakar.<br><br> Kebijakan Hitler yang supremasis
+            and
+            termotivasi oleh ras mengakibatkan kematian sekitar 50 juta orang selama Perang Dunia II, termasuk 6 juta
+            kaum
+            Yahudi and 5 juta etnis "non-Arya" yang pemusnahan sistematisnya diperintahkan oleh Hitler and
+            rekan-rekan
+            terdekatnya.</p>
+
+        <h2>Video Biografi Adolf Hitler</h2>
+        <video controls>
+            <source src="The World Wars Adolf Hitler History.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <h3>Galeri Foto Adolf Hitler</h3>
+    <div class="gallery">
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Bundesarchiv_Bild_183-1989-0322-506%2C_Adolf_Hitler%2C_Kinderbild.jpg"
+                alt="Foto 1" onclick="openModal('image1')">
+            <figcaption>Adolf Hitler saat masih bayi.</figcaption>
+        </figure>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Hitler_1921.jpg" alt="Foto 2"
+                onclick="openModal('image2')">
+            <figcaption>Adolf Hitler menjadi tentara pada Perang Dunia Pertama.</figcaption>
+        </figure>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Bundesarchiv_Bild_183-S62600%2C_Adolf_Hitler.jpg"
+                alt="Foto 3" onclick="openModal('image3')">
+            <figcaption>Adolf Hitler menjadi kepala negara Jerman.</figcaption>
+        </figure>
+    </div>
+    </div>
+
+    <div id="image1" class="modal">
+        <span class="modal-content">
+            <span class="close" onclick="closeModal('image1')">&times;</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Bundesarchiv_Bild_183-1989-0322-506%2C_Adolf_Hitler%2C_Kinderbild.jpg"
+                alt="Foto 1">
+        </span>
+    </div>
+    <div id="image2" class="modal">
+        <span class="modal-content">
+            <span class="close" onclick="closeModal('image2')">&times;</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Hitler_1921.jpg" alt="Foto 2">
+        </span>
+    </div>
+    <div id="image3" class="modal">
+        <span class="modal-content">
+            <span class="close" onclick="closeModal('image3')">&times;</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Bundesarchiv_Bild_183-S62600%2C_Adolf_Hitler.jpg"
+                alt="Foto 3">
+        </span>
+    </div>
+
+    <footer>
+        &copy; Zulfa Azka Farisadilah - 1204220109
+    </footer>
+
+    <script>
+        function openModal(imageId) {
+            document.getElementById(imageId).style.display = "block";
+        }
+
+        function closeModal(imageId) {
+            document.getElementById(imageId).style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
